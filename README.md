@@ -92,7 +92,7 @@ Install MongoDB, a popular noSQL database.
   $ mongo
   $ use [new-datebase-name]
   ```
-  **Note:** In the the server.js you will need to change '/mongo-seed', in the line below, to whatever you name your database
+  **Note:** In the server.js file you will need to change '/mongo-seed', in the line below, to whatever you name your database
 
   ```
   mongoose.connect("mongodb://localhost/mongo-seed");
