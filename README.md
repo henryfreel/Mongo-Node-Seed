@@ -1,18 +1,20 @@
-# Seed Template for Node.js with Express, and Body-parser
+# Seed Template for MongoDB and Mongoose and Node.js with Express, and Body-parser
 
 ## What's in the Box?
 
-1. Node.js
-2. Express
-3. Underscore.js (server)
-4. Body-parser
-5. Underscore.js (client)
-6. Jquery
-7. Boostrap
+1. Boostrap
+2. Jquery
+3. Underscore.js (client)
+4. Node.js
+5. Express
+6. Underscore.js (server)
+7. Body-parser
+8. MongoDB
+9. Mongoose
 
 
 
-## Getting Started
+## Getting Started 
 
 1. Clone or fork this repo
 	```
@@ -23,6 +25,8 @@
 	```
 	$ cd node-seed
 	```
+
+### Install Node
 
 3. If you haven't already, Install Node & NPM
  	* Standalone installer: [https://nodejs.org/download/](https://nodejs.org/download/)
@@ -47,8 +51,32 @@
 
 5. Run either `node server.js`, `npm start`, or `nodemon` (<a href="http://nodemon.io" target="_blank">docs</a>). All three commands do the same thing, which is start your server :)
 
-6. That's it!
+### Install Mongo
 
+Install MongoDB, a popular noSQL database.
+
+* First we'll need to run brew update to update our brew packages.
+
+  ```bash
+  brew update
+  ```
+* Next we'll need to run `brew install` for **MongoDB**
+
+  ```bash
+  brew install mongodb
+  ```
+
+* Then we'll need a directory for **MongoDB** to save data.
+
+  ```bash
+  sudo mkdir -p /data/db
+  ```
+
+  * Finally we'll want to make sure we have permission to read and write to this directory.
+
+  ```bash
+  sudo chown -R $USER /data/db
+  ```
 
 ## File structure
 
