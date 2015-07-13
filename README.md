@@ -1,4 +1,4 @@
-# Seed Template for MongoDB and Mongoose and Node.js with Express, and Body-parser
+# Seed Template for MongoDB with Mongoose and Node.js with Express, and Body-parser
 
 ## What's in the Box?
 
@@ -26,7 +26,7 @@
 	$ cd node-seed
 	```
 
-### Install Node
+### Install Node and Setup Server
 
 3. If you haven't already, Install Node & NPM
  	* Standalone installer: [https://nodejs.org/download/](https://nodejs.org/download/)
@@ -51,31 +51,46 @@
 
 5. Run either `node server.js`, `npm start`, or `nodemon` (<a href="http://nodemon.io" target="_blank">docs</a>). All three commands do the same thing, which is start your server :)
 
-### Install Mongo
+### Install Mongo and Create Database
 
 Install MongoDB, a popular noSQL database.
 
-* First we'll need to run brew update to update our brew packages.
+1 First we'll need to run brew update to update our brew packages.
 
   ```bash
   brew update
   ```
-* Next we'll need to run `brew install` for **MongoDB**
+2 Next we'll need to run `brew install` for **MongoDB**
 
   ```bash
   brew install mongodb
   ```
 
-* Then we'll need a directory for **MongoDB** to save data.
+3 Then we'll need a directory for **MongoDB** to save data.
 
   ```bash
   sudo mkdir -p /data/db
   ```
 
-  * Finally we'll want to make sure we have permission to read and write to this directory.
+4 Finally we'll want to make sure we have permission to read and write to this directory.
 
   ```bash
   sudo chown -R $USER /data/db
+  ```
+
+5. At this point, if you haven't already created the database you're using, do so in the terminal. You'll need to start up MongoDB by running:
+
+  ```
+  $ mongod
+  ```
+
+  **Note:** If you already have an instance of MongoDB running, you'll get an error at this step. If that's the case, you can move on to the next step, since MongoDB is already running!
+
+6. In a separate terminal tab, create and connect to your database. In the example, our new database is called `catchphrasely`.
+
+  ```
+  $ mongo
+  $ use [new-datebase-name]
   ```
 
 ## File structure
