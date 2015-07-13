@@ -93,6 +93,8 @@ Install MongoDB, a popular noSQL database.
   $ use [new-datebase-name]
   ```
 
+7. That's it! You're ready to go :)
+
 ## File structure
 
 ```
