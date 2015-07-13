@@ -86,7 +86,7 @@ Install MongoDB, a popular noSQL database.
 
   **Note:** If you already have an instance of MongoDB running, you'll get an error at this step. If that's the case, you can move on to the next step, since MongoDB is already running!
 
-6. In a separate terminal tab, create and connect to your database. In the example, our new database is called `catchphrasely`.
+6. In a separate terminal tab, create and connect to your database. Name it whatever you'd like.
 
   ```
   $ mongo
